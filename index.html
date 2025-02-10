@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="home-page-container">
+      <div class="detect-weather">
+        <img src="./images/WeatherIcons.gif" alt="weather icon" />
+        <h3>Detecting your location</h3>
+        <p>
+          Your current location will displayed on the App<br />
+          & used for calculating realtime weather
+        </p>
+      </div>
+    </div>
+
+    <div class="outer-container close">
+      <div class="weather-container">
+        <div class="weather">
+          <img
+            class="weather-img"
+            src="./images/clearBackground.jpeg"
+            alt="weather"
+          />
+          <div class="date-and-time-container">
+            <div class="time-info">
+              <span class="hours">07</span>:<span class="minutes">33</span
+              >:<span class="seconds">07</span>
+            </div>
+            <div class="date-info">
+              <span class="day">Monday</span>,
+              <span class="date">01</span>
+              <span class="month">January</span>
+              <span class="year">2000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather-info">
+          <form class="input-container">
+            <input id="city-input" type="text" placeholder="Enter city name" />
+            <button class="search-btn">Search</button>
+          </form>
+
+          <div class="weather-details-container">
+            <div class="weather-details">
+              <img
+                class="weather-image"
+                src="./images/clouds.png"
+                alt="weather icon"
+              />
+              <p class="weather-name">clouds</p>
+              <div class="weather-name-celcias">
+                <p class="weather-celcias">16°C</p>
+                <p class="city-name">Malda</p>
+              </div>
+            </div>
+
+            <div class="weather-footer-container">
+              <div class="weather-footer">
+                <div>
+                  <img
+                    class="icon humidity-icon"
+                    src="./images/humidity.png"
+                    alt="humidity"
+                  />
+                </div>
+                <div>
+                  <p><span class="humidity">48</span>%</p>
+                  <p>Humidity</p>
+                </div>
+              </div>
+              <div class="weather-footer">
+                <div>
+                  <img
+                    class="icon wind-icon"
+                    src="./images/wind.png"
+                    alt="humidity"
+                  />
+                </div>
+                <div>
+                  <p><span class="windSpeed">1.23</span> km/h</p>
+                  <p>wind speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
